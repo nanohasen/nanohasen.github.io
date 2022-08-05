@@ -1,22 +1,31 @@
-
-
 body
 {
-	background:rgba(0,0,0,0.3);
+background:rgba(0,0,0,0.3);
 }
 
-h1,h2
+h1,h2,p
 {
-	text-align:center;
-	border:1px solid black;
-	background:black;
-	color:white;
-	margin:1em 15em 0.5em 15em;
+text-align:center;
 }
-
 
 img
 {
-	display:block;
-	margin:auto;
+display:block;
+margin:auto;
+}
+
+#pixel1
+{
+position:relative;
+top:-10em;
+left:11em;
+width:50px;
+}
+
+#pixel2
+{
+position:relative;
+top:-12.2em;
+left:-11em;
+width:50px;
 }

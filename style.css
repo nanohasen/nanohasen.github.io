@@ -1078,12 +1078,12 @@
   .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
-  @media (min-width: 150px) {
+  @media (min-width: 350px) {
 
 
     .clients-item { min-width: calc(33.33% - 10px); }
     .myavatar { width:90px; box-shadow:none; }
-
+    .info-content .title{  margin-left:0em;}
 
     .project-img,
     .blog-banner-box { height: auto; }

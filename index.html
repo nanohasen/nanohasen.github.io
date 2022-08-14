@@ -1,32 +1,545 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title> Haakon Johansen Blog </title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		 <h1> Yo, This is still a Github page </h1>
-		 <h2> check me out </h2>
-		 <img src="Image/nice.jpg">
-		 <img id="pixel1" src="Image/pika.gif">
-		 <img id="pixel2" src="Image/pika.gif">
-		 <h2> Yes, I can make a github page </h2>
-		 <p> Haakkon Johansen &copy; Inc </p>
-	</body>
-	<script>
-		
-		//these scripts just prevents some user interactions that I don't want for this website  
-		
-		const images = document.querySelectorAll('img');
-		images.forEach(images=>images.draggable=false);
-		
-		window.addEventListener('contextmenu',(e)=>{
-			e.preventDefault();
-		});
-		
-		window.addEventListener('keydown',(e)=>{
-			e.preventDefault();
-		});
-	</script>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Haakon Johansen Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script></script>
+</head>
+
+<body>
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="myavatar" src="hakky.png" alt="Haakon Johansen">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Haakon Johansen">Haakon Johansen </h1>
+          <p class="title">Programmer & Hobby Mechanic</p>
+        </div>
+
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:johansenhaakon2@gmail.com" class="contact-link">johansenhaakon2</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">30.Mars.1997</time>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Graphic</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Other</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm self-taught programmer from Norway 🇳🇴 who hopes to get my foot in the tech-field!
+          </p>
+
+          <p>
+            I'm a tech-junkie! I've experienced in various IT-related fields and software. 
+            I've also learned programming languages, such as C++, Java, Python, Javascript, Go, etc. 
+            This website will be my little personal website to post upcoming projects or something else I have not yet decided to do. 
+          </p>
+
+          <p>
+           I'm also a geek for mechanics and electronics. 
+          </p>
+        </section>
+        <section class="about-text">
+         <h1> 
+          Note:Allot of stuff is unfinished on the website. I also want to make it more dynamic and delete most
+          of html code
+         </h1>
+        </section>
+      </article>
+
+      <article class="resume" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills/Intrests</h2>
+        </header>
+        <div class="separator"></div>
+        </section>
+
+        <section class="skill">
+
+        </ul>
+        <h3 class="h3 skills-title">Languages</h3>
+        <ul class="skills-list content-card">
+          <li class="skills-item">
+           <div class="title-wrapper">
+             <h5 class="h5">Javascript</h5>
+             <data value="75">75%</data>
+           </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width:75%;"></div>
+            </div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">C++</h5>
+              <data value="35">35%</data>
+            </div>
+
+             <div class="skill-progress-bg">
+               <div class="skill-progress-fill" style="width:35%;"></div>
+             </div>
+           </li>
+           <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Python</h5>
+              <data value="100">100%</data>
+            </div>
+
+             <div class="skill-progress-bg">
+               <div class="skill-progress-fill" style="width:100%;"></div>
+             </div>
+           </li>
+
+           <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">HTML & CSS </h5>
+              <data value="100">100%</data>
+            </div>
+
+             <div class="skill-progress-bg">
+               <div class="skill-progress-fill" style="width:100%;"></div>
+             </div>
+           </li>
+
+           <li class="skills-item">
+            <div class="title-wrapper">
+              <h5 class="h5">Java </h5>
+              <data value="100">100%</data>
+            </div>
+
+             <div class="skill-progress-bg">
+               <div class="skill-progress-fill" style="width:100%;"></div>
+             </div>
+           </li>
+        </ul>
+        <br>
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:40%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:70%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Video Production</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Source Code Reading</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width:75%;"></div>
+              </div>
+
+            </li>
+
+
+
+        </section>
+
+      </article>
+
+
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio / Projects </h2>
+        </header>
+        <div class="separator"></div>
+        <section class="projects">
+
+
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="gamemaker.png" alt="GML" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> simple GML scripts</h3>
+
+                <p class="project-category">Game Maker</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="hakky.png" alt="Hulu Clone" loading="lazy">
+                </figure>
+
+                <h3 class="project-title"> Hulu clone </h3>
+
+                <p class="project-category">I guess this is a hulu clone (React.js)</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <article class="blog" data-page="graphic">
+
+        <header>
+          <h2 class="h2 article-title">Graphics & Videos</h2>
+        </header>
+        <div class="separator"></div>
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="#" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+
+                  <p class="blog-text"></p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="#" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+
+                  <p class="blog-text"></p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="#" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+                  
+                  <p class="blog-text"> </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="#" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+
+                  <p class="blog-text"></p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="#" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+
+                  <p class="blog-text"></p>
+
+                </div>
+                  
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="#"" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category"></p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"></time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title"></h3>
+
+                  <p class="blog-text"> </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+      <article class="blog" data-page="other">
+      </article>
+      
+    </div>
+    
+  </main>
+
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
